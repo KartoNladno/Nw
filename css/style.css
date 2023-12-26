@@ -42,6 +42,25 @@ body {
     width: 100%;
 }
 
+.celebration__img:hover {
+    animation: santa infinite 1s alternate backwards ease;
+}
+
+
+
+@keyframes santa {
+    0% {
+        transform: scale(0);
+    }
+
+
+    100% {
+        transform: scale(0.5);
+        transform: rotate(90deg);
+        transform: translateY(0vw);
+    }
+}
+
 .celebration__content {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: inline-block;
@@ -50,6 +69,10 @@ body {
     border-radius: 20px;
     border: 5px solid white;
     padding: 20px 50px;
+}
+
+.celebration__title {
+    animation: runleft 5s infinite alternate;
 }
 
 .btn-block {
@@ -68,4 +91,32 @@ body {
     background-color: rgb(147, 19, 19);
     border: 1px solid rgb(9, 215, 9);
     border-radius: 10px;
+}
+
+.btn:hover {
+    color: aqua;
+    background-color: black;
+    border-color: blueviolet;
+    border: solid;
+}
+
+
+@keyframes runleft {
+    0% {
+        transform: scale(0);
+        transform: translateX(-4.5vw);
+        transform: translateY(-3vw);
+    }
+
+    25% {
+        transform: translateY(5vw);
+        transform: translateX(4.5vw) scale(0.75)
+    }
+
+
+
+    100% {
+        transform: translateY(-3vw);
+        transform: translateX(-1vw)
+    }
 }
